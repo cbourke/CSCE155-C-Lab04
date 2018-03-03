@@ -1,5 +1,13 @@
-#include<stdio.h>
+/**
+ * This program plays a guessing game with the user.
+ * It selects a random number between 1 and 1000 and
+ * prompts the user to guess the value, informing them
+ * of whether or not it is higher or lower than the
+ * actual value.  Once the user guesses correctly, the
+ * game ends and the number of guesses is displayed.
+ */
 #include<stdlib.h>
+#include<stdio.h>
 
 int main(int argc, char **argv) {
 
@@ -17,6 +25,6 @@ int main(int argc, char **argv) {
 
   //TODO: place your code here
 
-  printf("Congratulations, you found it!  Number of guesses: %d\n", num_guesses); 
+  printf("Congratulations, you found it!  Number of guesses: %d\n", num_guesses);
   return 0;
 }

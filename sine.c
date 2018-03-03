@@ -1,5 +1,10 @@
-#include<stdio.h>
+/**
+ * This program uses a Taylor Series to compute a value
+ * of sine.
+ *
+ */
 #include<stdlib.h>
+#include<stdio.h>
 #include<math.h>
 
 /**
