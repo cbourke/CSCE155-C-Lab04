@@ -2,10 +2,9 @@
  * This program prints integers up to the input value
  * and prints whether or not they are prime.
  */
-#include<stdio.h>
-#include<stdlib.h>
-#include<math.h>
-
+#include <stdlib.h>
+#include <stdio.h>
+#include <math.h>
 
 int main(int argc, char **argv) {
 
@@ -18,6 +17,8 @@ int main(int argc, char **argv) {
   int i;
 
   for(i=2; i<=n; i++) {
+    //assume that i is prime (true) unless you find
+    // a factor...
     int isPrime = 1;
     //TODO: write a loop that tests whether or not
     //      the integer i is prime

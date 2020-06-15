@@ -1,22 +1,16 @@
 /**
  * This program uses a Taylor Series to compute a value
  * of sine.
- *
  */
-#include<stdlib.h>
-#include<stdio.h>
-#include<math.h>
+#include <stdlib.h>
+#include <stdio.h>
+#include <math.h>
 
 /**
- * A function to compute the factorial function, n!.
+ * This function computes the factorial function,
+ * n! = n * (n-1) * (n-2) ... 3 * 2 * 1
  */
-long factorial(int n) {
-  long result = 1, i;
-  for(i=2; i<=n; i++) {
-    result *= i;
-  }
-  return result;
-}
+long factorial(int n);
 
 int main(int argc, char **argv) {
 
@@ -30,12 +24,18 @@ int main(int argc, char **argv) {
 
   double result = 0.0;
 
-  //compute sin(x) using a taylor series out to n terms
-
-
+  //TODO: compute sin(x) using a taylor series out to n terms
 
 
   printf("sin(%f) = %f\n", x, result);
 
   return 0;
+}
+
+long factorial(int n) {
+  long result = 1, i;
+  for(i=2; i<=n; i++) {
+    result *= i;
+  }
+  return result;
 }

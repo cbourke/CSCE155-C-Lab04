@@ -5,9 +5,11 @@
  * of whether or not it is higher or lower than the
  * actual value.  Once the user guesses correctly, the
  * game ends and the number of guesses is displayed.
+ * 
  */
-#include<stdlib.h>
-#include<stdio.h>
+#include <stdlib.h>
+#include <stdio.h>
+#include <time.h>
 
 int main(int argc, char **argv) {
 
