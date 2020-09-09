@@ -13,20 +13,25 @@
 
 int main(int argc, char **argv) {
 
+  // the game will be played by creating a random
+  // number between 1 and 1000
   int n = 1000;
 
-  //seed the random number generator
+  // seed the random number generator
   srand(time(NULL));
+  // the program generates a random number between 1 and 1000
+  // the user will try to guess what this number is
   int number = (rand() % n) + 1;
 
+  // initialize the user's "guess" to be an invalid value
   int guess = -10;
-  int num_guesses = 0;
+  int numGuesses = 0;
 
   printf("Guess-A-Number Game!\n");
   printf("Enter a number between 1 and %d\n", n);
 
   //TODO: place your code here
 
-  printf("Congratulations, you found it!  Number of guesses: %d\n", num_guesses);
+  printf("Congratulations, you found it!  Number of guesses: %d\n", numGuesses);
   return 0;
 }

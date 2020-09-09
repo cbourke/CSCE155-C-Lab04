@@ -197,17 +197,26 @@ of a given number.  Complex functions such as these are usually
 approximated using some numeric analysis technique.  One such 
 technique is to use a Taylor series to approximate the sine function:
 
-$$\sin{x} = \sum_{i=0}^\infty \frac{(-1)^i}{(2i+1)!} x^{2i+1} = x - \frac{x^3}{3!}+\frac{x^5}{5!}-\cdots$$
+$$\sin{(x)} = \sum_{i=0}^\infty \frac{(-1)^i}{(2i+1)!} x^{2i+1} = x - \frac{x^3}{3!}+\frac{x^5}{5!}-\cdots$$
 
 Obviously, we cannot compute an infinite series.  Instead, we will 
 approximate $\sin(x)$ by computing the Taylor series above out to $n$ 
-terms.
+terms.  For example, if $n = 4$ then the first 4 terms of the series would be:
+
+$$\sin{(x)} \approx x - \frac{x^3}{3!}+\frac{x^5}{5!}- \frac{x^7}{7!}$$
+
+If $x = 1.5$, then the approximation would be:
+
+$$\sin{(1.5)} \approx 1.5 - \frac{1.5^3}{3!}+\frac{1.5^5}{5!}- \frac{1.5^7}{7!} = 0.9973911$$
+
+which is a pretty good approximation since $\sin{(1.5)} = 0.9974950$.
 
 We have provided you with an incomplete program, \mintinline{text}{sine.c} 
 that reads in two values from the command line, $x$ and $n$.  We have also 
 written a function to compute the factorial which you may find useful.  
 You will need to complete the program by writing code to compute 
-the approximation of $\sin(x)$.
+the approximation of $\sin(x)$ using the Taylor series above out to $n$ 
+terms.
 
 Complete the program and answer the questions on your worksheet. 
 
