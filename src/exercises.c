@@ -40,6 +40,17 @@ int main(int argc, char **argv) {
 
   //3. Print numbers 1 thru n separated by a comma except for
   //   the last one; example: 1, 2, 3, 4, 5
+    int n;
+    scanf("%d",&n);
+     for(int i=1;i<=n;i++)
+    {
+        printf("%d",i);
+
+        if(i<n)
+            printf(",");
+    }
+
+
 
   //4. Print squares of numbers 1 thru n separated by a comma 
   //   except for the last one; example: 1, 4, 9, 16, 25
