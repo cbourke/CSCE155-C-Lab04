@@ -1,8 +1,10 @@
 # Computer Science I
 ## Lab 4.0 - Loops
+### C Version
 [School of Computing](https://computing.unl.edu)  
 [College of Engineering](https://engineering.unl.edu/)  
 [University of Nebraska-Lincoln](https://unl.edu)  
+[University of Nebraska-Omaha](https://unomaha.edu)  
 
 This lab introduces loop control structures using the C programming
 language.
@@ -134,9 +136,7 @@ with several loop exercises for you to complete as outlined in the
 comments embedded in that file.  Complete all of the exercises and
 try them with various input values of `n` to ensure they all work.  
 
-Here is a *partial* output example for an input value of `n = 10`.
-Submit your solution to the webhandin and use the webgrader to
-verify your full program results:
+Here is a *partial* output example for an input value of `n = 10`:
 
 ```text
 10 13 16 19
@@ -211,14 +211,7 @@ each wrong guess it should print the appropriate hint to the user.
 
     -   `guessingGame.c`
 
-    through the online handin system.  Verify your program by grading
-    yourself through the online webgrader system.  Be sure your program
-    passes all tests to get credit.
-
-    Recall that both expected output and your program's output
-    will be displayed.  The formatting may differ slightly which is fine.
-    As long as your program successfully compiles, runs and outputs
-    the *same values*, it is considered correct.
+    Be sure your program passes all tests to get credit.
 
 2.  Even if you worked with a partner, you *both* should turn in all
     files.
